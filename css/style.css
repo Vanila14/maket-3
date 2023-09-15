@@ -324,7 +324,7 @@
 }
 
 .footer__col-link {
-    display: block;
+    display:inline-block;
     padding: 5px 0;
     position: relative;
     z-index: 1;
