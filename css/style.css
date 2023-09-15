@@ -15,10 +15,11 @@
     background: var(--general-bg);
 }
 
-.body--opened-menu {
+.body--opened-menu,
+.body--opened-modal {
     overflow: hidden;
-
 }
+
 
 .wrapper {
     min-height: 100%;
