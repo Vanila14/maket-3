@@ -60,7 +60,7 @@
     position: absolute;
     inset: 5px;
     border-radius: 50%;
-    border: 1px solid #CEAAD0;
+    border: 1px solid var(--accent-color-2);
 
     opacity: 0;
     transition: var(--animation);
@@ -174,7 +174,7 @@
 .program__price-text {
     line-height: 1.6;
     text-transform: uppercase;
-    color: #CEAAD0;
+    color: var(--accent-color-2);
     margin-bottom: 5px;
 }
 
@@ -323,7 +323,7 @@
 .accordion-content__title {
     text-transform: uppercase;
     line-height: 1.6;
-    color: #CEAAD0;
+    color: var(--accent-color-2);
     margin-bottom: 20px;
 }
 
@@ -339,7 +339,7 @@
 .accordion-content__icon {
     width: 24px;
     height: 24px;
-    border: 1px solid #CEAAD0;
+    border: 1px solid var(--accent-color-2);
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
@@ -406,7 +406,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: var(--transition);
+    transition: var(--animation);
 }
 
 .swiper-button-disabled.gallery__prev,
@@ -432,7 +432,7 @@
 
 .gallery__prev path,
 .gallery__next path {
-    transition: var(--transition);
+    transition: var(--animation);
 }
 
 .gallery__prev:hover,
@@ -500,7 +500,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: var(--transition);
+    transition: var(--animation);
 }
 
 .swiper-button-disabled.testimonials__prev,
@@ -526,7 +526,7 @@
 
 .testimonials__prev path,
 .testimonials__next path {
-    transition: var(--transition);
+    transition: var(--animation);
 }
 
 .testimonials__prev:hover,
@@ -553,7 +553,7 @@
     padding: 30px 30px 40px;
     display: flex;
     gap: 30px;
-    transition: var(--transition);
+    transition: var(--animation);
     opacity: 0;
     height: auto;
 }
@@ -598,7 +598,7 @@
 
 .testimonials__student-inst {
     margin: 0 auto;
-    color: #CEAAD0;
+    color: var(--accent-color-2);
 }
 
 .testimonials__quote span {
@@ -678,7 +678,7 @@
     border-radius: 100px;
     padding: 19px 42px 19px 28px;
     font-size: 16px;
-    transition: var(--transition);
+    transition: var(--animation);
     margin-bottom: 20px;
 }
 
@@ -688,7 +688,7 @@
 
 .contact__input::placeholder {
     color: var(--input-color);
-    transition: var(--transition);
+    transition: var(--animation);
 }
 
 .contact__input:hover::placeholder {
@@ -706,7 +706,7 @@
 
 .contact__check-label a {
     text-decoration: underline;
-    transition: var(--transition);
+    transition: var(--animation);
 }
 
 .contact__check-label a:hover {
@@ -718,7 +718,7 @@
     width: 16px;
     height: 16px;
     border: 1.5px solid var(--input-color);
-    transition: var(--transition);
+    transition: var(--animation);
     border-radius: 4px;
     flex-shrink: 0;
     cursor: pointer;
@@ -731,7 +731,7 @@
     inset: 0;
     background: url("../img/icons/check.svg") 50% 50% no-repeat;
     opacity: 0;
-    transition: var(--transition);
+    transition: var(--animation);
 }
 
 .contact__checkbox:hover {
@@ -899,6 +899,10 @@
 }
 
 @media (max-width: 800px) {
+
+    html {
+        scroll-padding-top: 50px;
+    }
 
     .hero__content {
         max-width: none;
